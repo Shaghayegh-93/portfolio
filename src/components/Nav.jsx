@@ -4,8 +4,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log("open", isOpen);
-  // const toggleMenuHandler = () => {};
   return (
     <div className="flex items-center justify-between px-4 fixed w-full h-[80px] bg-[#0a192f] text-gray-300">
       <div>
@@ -20,7 +18,10 @@ const Nav = () => {
           <li>Contact</li>
         </ul>
       </div>
-      <div className="md:hidden z-10 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+      <div
+        className="md:hidden z-10 cursor-pointer"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         {!isOpen ? <FaTimes /> : <FaBars />}
       </div>
       {/* mobile menu */}
