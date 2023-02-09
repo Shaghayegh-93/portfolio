@@ -43,7 +43,7 @@ const Nav = () => {
       </ul>
 
       {/* social section */}
-      <div className="flex flex-col fixed top-[35%] left-0 items-center  ">
+      <div className="hidden lg:flex flex-col fixed top-[35%] left-0 items-center  ">
         <ul>
           <li className="flex  w-[160px] h-[60px] ml-[-100px] hover:ml-[1px] bg-blue-600 duration-300">
             <a
