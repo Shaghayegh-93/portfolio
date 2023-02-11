@@ -18,9 +18,9 @@ const Hero = () => {
           voluptates nesciunt dolorem!
         </p>
         <div>
-          <button className="border-2 text-white flex items-center justify-center px-6 py-3 my-2 hover:bg-[#E5E2E1] hover:text-black">
+          <button className="border-2 text-white flex items-center justify-center px-6 py-3 my-2 hover:bg-[#E5E2E1] hover:text-black group">
             View Work
-            <span className="hover:rotate-90 duration-300 ">
+            <span className="group-hover:rotate-90 duration-300 ">
               <HiArrowNarrowRight className="ml-3" />
             </span>
           </button>
