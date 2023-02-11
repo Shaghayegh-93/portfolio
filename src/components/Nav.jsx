@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
+import CV from "../assets/resume/CV.pdf";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -71,7 +72,7 @@ const Nav = () => {
           </li>
           <li className="flex  w-[160px] h-[60px] ml-[-100px] hover:ml-[1px] bg-[#565f69] duration-300">
             <a
-              href="../assets/resume/CV.pdf"
+              href={CV}
               download
               className="flex items-center justify-between w-full text-gray-300 "
             >
