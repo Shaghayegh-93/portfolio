@@ -25,7 +25,7 @@ const Nav = () => {
         className="md:hidden z-10 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {!isOpen ? <FaTimes /> : <FaBars />}
+        {!isOpen ? <FaBars /> : <FaTimes />}
       </div>
       {/* mobile menu */}
 
