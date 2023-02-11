@@ -27,27 +27,7 @@ const About = () => {
         </div>
       </div>
     </div>
-    // <div name="about" className="bg-[#0a192f] w-full h-screen pt-20">
-    //   <div className="flex flex-col sm:flex-row  sm:items-center justify-center  text-gray-300 max-w-[1000px] px-8 mx-auto ">
-    //     <div className="max-w-[300px]">
-    //       <div className="sm:text-right pb-8 pl-4 w-fit">
-    //         <h2 className="text-4xl font-bold border-b-4 border-red-400">
-    //           About
-    //         </h2>
-    //       </div>
 
-    //       <p>Hi,I'm Shaghayegh,nice to meet you.Please take a look around</p>
-    //     </div>
-    //     <div className="max-w-[500px]">
-    //       <p>
-    //         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga amet,
-    //         perferendis, dolores quaerat obcaecati possimus rem tempora tempore
-    //         dolore ipsam corporis odit? Provident excepturi, quam deleniti a
-    //         iure tempore maiores!
-    //       </p>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
