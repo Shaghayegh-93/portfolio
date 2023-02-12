@@ -16,7 +16,7 @@ const Nav = () => {
         <ul className="hidden md:flex items-center justify-between">
           <li>Home</li>
           <li>About</li>
-          <li>Experience</li>
+          <li>Skills</li>
           <li>Work</li>
           <li>Contact</li>
         </ul>
