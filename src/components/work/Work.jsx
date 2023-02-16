@@ -4,9 +4,24 @@ import WorkCard from "./WorkCard";
 
 const Work = () => {
   const workImage = [
-    { image: todoPicture, id: Math.floor(Math.random() * 1000) },
-    { image: todoPicture, id: Math.floor(Math.random() * 1000) },
-    { image: todoPicture, id: Math.floor(Math.random() * 1000) },
+    {
+      image: todoPicture,
+      codeUrl: "https://github.com/Shaghayegh-93/todo_list_app",
+      demoUrl: "https://resplendent-arithmetic-ddb679.netlify.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
+    {
+      image: todoPicture,
+      codeUrl: "https://github.com/Shaghayegh-93/todo_list_app",
+      demoUrl: "https://resplendent-arithmetic-ddb679.netlify.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
+    {
+      image: todoPicture,
+      codeUrl: "https://github.com/Shaghayegh-93/todo_list_app",
+      demoUrl: "https://resplendent-arithmetic-ddb679.netlify.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
   ];
   return (
     <div name="work" className="bg-[#0a192f] md:h-screen w-full text-gray-300">
@@ -21,7 +36,11 @@ const Work = () => {
           {workImage.map((work) => {
             return (
               <div key={work.id}>
-                <WorkCard style={{ backgroundImage: `url(${work.image})` }} />
+                <WorkCard
+                  style={{ backgroundImage: `url(${work.image})` }}
+                  codeUrl={work.codeUrl}
+                  demoUrl={work.demoUrl}
+                />
               </div>
             );
           })}
