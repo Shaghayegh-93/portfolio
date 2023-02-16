@@ -1,19 +1,21 @@
 import React from "react";
-import todoPicture from "../../assets/images/todoPicture.png";
+import todoApp from "../../assets/images/todoApp.png";
+import travelApp from "../../assets/images/travelApp.png";
+
 import WorkCard from "./WorkCard";
 
 const Work = () => {
   const workInfo = [
     {
-      image: todoPicture,
+      image: todoApp,
       codeUrl: "https://github.com/Shaghayegh-93/todo_list_app",
       demoUrl: "https://resplendent-arithmetic-ddb679.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
     {
-      image: todoPicture,
-      codeUrl: "https://github.com/Shaghayegh-93/todo_list_app",
-      demoUrl: "https://resplendent-arithmetic-ddb679.netlify.app/",
+      image: travelApp,
+      codeUrl: "https://github.com/Shaghayegh-93/travel_app",
+      demoUrl: "https://imaginative-mermaid-42cdba.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
     {
