@@ -4,9 +4,13 @@ import CV from "../assets/resume/CV.pdf";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navClickHandler = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="flex items-center justify-between px-4 fixed w-full h-[80px] bg-[#0a192f] text-gray-300">
       <div>
@@ -14,17 +18,34 @@ const Nav = () => {
       </div>
       <div>
         <ul className="hidden md:flex items-center justify-between">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Work</li>
-          <li>Contact</li>
+          <li>
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link to="work" smooth={true} duration={500}>
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
-      <div
-        className="md:hidden z-10 cursor-pointer"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+      <div className="md:hidden z-10 cursor-pointer" onClick={navClickHandler}>
         {!isOpen ? <FaBars /> : <FaTimes />}
       </div>
       {/* mobile menu */}
@@ -36,11 +57,51 @@ const Nav = () => {
             : "hidden"
         }
       >
-        <li className="py-6 text-3xl">Home</li>
-        <li className="py-6 text-3xl">About</li>
-        <li className="py-6 text-3xl">Experience</li>
-        <li className="py-6 text-3xl">Work</li>
-        <li className="py-6 text-3xl">Contact</li>
+        <li className="py-6 text-3xl">
+          <Link
+            onClick={navClickHandler}
+            to="home"
+            smooth={true}
+            duration={500}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="py-6 text-3xl">
+          <Link
+            onClick={navClickHandler}
+            to="about"
+            smooth={true}
+            duration={500}
+          >
+            About
+          </Link>
+        </li>
+        <li className="py-6 text-3xl">
+          <Link
+            onClick={navClickHandler}
+            to="skills"
+            smooth={true}
+            duration={500}
+          >
+            Skills
+          </Link>
+        </li>
+        <li className="py-6 text-3xl">
+          <Link
+            onClick={navClickHandler}
+            to="work"
+            smooth={true}
+            duration={500}
+          >
+            Work
+          </Link>
+        </li>
+        <li className="py-6 text-3xl">
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* social section */}
