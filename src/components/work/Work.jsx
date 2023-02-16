@@ -3,7 +3,7 @@ import todoPicture from "../../assets/images/todoPicture.png";
 import WorkCard from "./WorkCard";
 
 const Work = () => {
-  const workImage = [
+  const workInfo = [
     {
       image: todoPicture,
       codeUrl: "https://github.com/Shaghayegh-93/todo_list_app",
@@ -33,7 +33,7 @@ const Work = () => {
           <p className="py-4">Check out some of my recent work</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {workImage.map((work) => {
+          {workInfo.map((work) => {
             return (
               <div key={work.id}>
                 <WorkCard
