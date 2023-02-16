@@ -1,6 +1,6 @@
 import React from "react";
 
-const WorkCard = ({ style }) => {
+const WorkCard = ({ style, codeUrl, demoUrl }) => {
   return (
     <div
       style={style}
@@ -12,13 +12,13 @@ const WorkCard = ({ style }) => {
         </span>
         <div className="flex items-center justify-center mt-4">
           <a
-            href=""
+            href={demoUrl}
             className="text-lg text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold"
           >
             <button>Demo</button>
           </a>
           <a
-            href=""
+            href={codeUrl}
             className="text-lg text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold"
           >
             <button>Code</button>
