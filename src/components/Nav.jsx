@@ -19,7 +19,7 @@ const Nav = () => {
       <div>
         <ul className="hidden md:flex items-center justify-between">
           <li>
-            <Link to="home" smooth={true} duration={500}>
+            <Link to="hero" smooth={true} duration={500}>
               Home
             </Link>
           </li>
