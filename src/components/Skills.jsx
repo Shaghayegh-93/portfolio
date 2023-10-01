@@ -6,10 +6,8 @@ import react from "../assets/images/react.png";
 import tailwind from "../assets/images/tailwind.png";
 import nextjs from "../assets/images/nextjs.png";
 import github1 from "../assets/images/github1.png";
-import mongo from "../assets/images/mongo.png";
-import bootstrap from "../assets/images/bootstrap.png";
-
-
+import typescriptLogo from "../assets/images/typescriptLogo.png";
+// import bootstrap from "../assets/images/bootstrap.png";
 
 const Skills = () => {
   return (
@@ -28,7 +26,7 @@ const Skills = () => {
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={css} alt="cssLogo" className="w-20 mx-auto" />
-            <p className="my-4" >CSS</p>
+            <p className="my-4">CSS</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img
@@ -36,32 +34,36 @@ const Skills = () => {
               alt="javascriptLogo"
               className="w-20 mx-auto"
             />
-            <p className="my-4" >JAVASCRIPT</p>
+            <p className="my-4">JAVASCRIPT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={react} alt="reactLogo" className="w-20 mx-auto" />
-            <p className="my-4" >REACT</p>
+            <p className="my-4">REACT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={tailwind} alt="tailwindLogo" className="w-20 mx-auto" />
-            <p className="my-4" >TAILWIND</p>
+            <p className="my-4">TAILWIND</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={nextjs} alt="nextjsLogo" className="w-20 mx-auto " />
-            <p className="my-4" >NEXT</p>
+            <p className="my-4">NEXT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={github1} alt="github1Logo" className="w-20 mx-auto " />
-            <p className="my-4" >GITHUB</p>
+            <p className="my-4">GITHUB</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={bootstrap} alt="bootstrapLogo" className="w-20 mx-auto" />
-            <p className="my-4" >BOOTSTRAP</p>
+            <img
+              src={typescriptLogo}
+              alt="typescriptLogo"
+              className="w-20 mx-auto"
+            />
+            <p className="my-4">Typescript</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          {/* <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={mongo} alt="mongoLogo" className="w-20 mx-auto" />
             <p className="my-4" >MONGO</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
