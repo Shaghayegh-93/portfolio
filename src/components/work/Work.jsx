@@ -1,6 +1,8 @@
 import React from "react";
 import todoApp from "../../assets/images/todoApp.png";
 import travelApp from "../../assets/images/travelApp.png";
+import bookingApp from "../../assets/images/bookingApp.png";
+
 import WorkCard from "./WorkCard";
 
 const Work = () => {
@@ -17,7 +19,12 @@ const Work = () => {
       demoUrl: "https://imaginative-mermaid-42cdba.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
-
+    {
+      image: bookingApp,
+      codeUrl: "https://github.com/Shaghayegh-93/BookingApp",
+      demoUrl: "https://master--vermillion-clafoutis-633fe3.netlify.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
   ];
   return (
     <div name="work" className="bg-[#0a192f] md:h-screen w-full text-gray-300">
