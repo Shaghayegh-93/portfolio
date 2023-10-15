@@ -2,7 +2,7 @@ import React from "react";
 import todoApp from "../../assets/images/todoApp.png";
 import travelApp from "../../assets/images/travelApp.png";
 import bookingApp from "../../assets/images/bookingApp.png";
-import bookingApp from "../../assets/images/TodoWallPaper.png";
+import TodoWallPaper from "../../assets/images/TodoWallPaper.png";
 
 import WorkCard from "./WorkCard";
 
