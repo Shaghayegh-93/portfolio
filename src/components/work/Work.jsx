@@ -2,6 +2,7 @@ import React from "react";
 import todoApp from "../../assets/images/todoApp.png";
 import travelApp from "../../assets/images/travelApp.png";
 import bookingApp from "../../assets/images/bookingApp.png";
+import bookingApp from "../../assets/images/TodoWallPaper.png";
 
 import WorkCard from "./WorkCard";
 
@@ -23,6 +24,12 @@ const Work = () => {
       image: bookingApp,
       codeUrl: "https://github.com/Shaghayegh-93/BookingApp",
       demoUrl: "https://master--vermillion-clafoutis-633fe3.netlify.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
+    {
+      image: TodoWallPaper,
+      codeUrl: "https://github.com/Shaghayegh-93/NoteApp",
+      demoUrl: "https://lighthearted-macaron-43c0e7.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
   ];
