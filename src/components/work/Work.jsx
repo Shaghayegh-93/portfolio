@@ -2,17 +2,12 @@ import React from "react";
 import todoApp from "../../assets/images/todoApp.png";
 import travelApp from "../../assets/images/travelApp.png";
 import bookingApp from "../../assets/images/bookingApp.png";
-import TodoWallPaper from "../../assets/images/TodoWallPaper.png";
 import MovieApp from "../../assets/images/MovieApp.png";
+import TodoWallPaper from "../../assets/images/TodoWallpaper.png"
 import table from "../../assets/images/table.png";
 import shopping from "../../assets/images/shopping.png";
 import agency from "../../assets/images/agency.png";
 import ExpenseTracker from "../../assets/images/ExpenseTracker.png";
-
-
-
-
-
 import WorkCard from "./WorkCard";
 
 const Work = () => {
