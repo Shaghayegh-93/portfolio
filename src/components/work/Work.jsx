@@ -8,6 +8,8 @@ import table from "../../assets/images/table.png";
 import shopping from "../../assets/images/shopping.png";
 import agency from "../../assets/images/agency.png";
 import ExpenseTracker from "../../assets/images/ExpenseTracker.png";
+import Rick from "../../assets/images/Rick.png";
+
 import WorkCard from "./WorkCard";
 
 const Work = () => {
@@ -64,6 +66,12 @@ const Work = () => {
       image: ExpenseTracker,
       codeUrl: "https://github.com/Shaghayegh-93/Expense-taracker-App",
       demoUrl: "https://expense-taracker-app.vercel.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
+    {
+      image: Rick,
+      codeUrl: "https://github.com/Shaghayegh-93/RickAndMorty",
+      demoUrl: "https://ornate-piroshki-244879.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
   ];
