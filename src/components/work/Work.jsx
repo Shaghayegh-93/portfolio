@@ -10,10 +10,29 @@ import agency from "../../assets/images/agency.png";
 import ExpenseTracker from "../../assets/images/ExpenseTracker.png";
 import Rick from "../../assets/images/Rick.png";
 
+
 import WorkCard from "./WorkCard";
 
 const Work = () => {
   const workInfo = [
+    {
+      image: Rick,
+      codeUrl: "https://github.com/Shaghayegh-93/RickAndMorty",
+      demoUrl: "https://ornate-piroshki-244879.netlify.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
+    {
+      image: travelApp,
+      codeUrl: "https://github.com/Shaghayegh-93/travel_app",
+      demoUrl: "https://hotelbookingapp-sh.netlify.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
+    {
+      image: MovieApp,
+      codeUrl: "https://github.com/Shaghayegh-93/MovieApplication",
+      demoUrl: "https://movie-app-sh.netlify.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
     {
       image: todoApp,
       codeUrl: "https://github.com/Shaghayegh-93/todo_list_app",
@@ -21,26 +40,31 @@ const Work = () => {
       id: Math.floor(Math.random() * 1000),
     },
     {
-      image: travelApp,
-      codeUrl: "https://github.com/Shaghayegh-93/travel_app",
-      demoUrl: "https://imaginative-mermaid-42cdba.netlify.app/",
-      id: Math.floor(Math.random() * 1000),
-    },
-   
-    {
       image: TodoWallPaper,
       codeUrl: "https://github.com/Shaghayegh-93/NoteApp",
       demoUrl: "https://lighthearted-macaron-43c0e7.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
-    
+
+    // {
+    //   image: bookingApp,
+    //   codeUrl: "https://github.com/Shaghayegh-93/BookingApp",
+    //   demoUrl: "https://master--vermillion-clafoutis-633fe3.netlify.app/",
+    //   id: Math.floor(Math.random() * 1000),
+    // },
+
     {
       image: table,
       codeUrl: "https://github.com/Shaghayegh-93/table",
       demoUrl: "https://sample-table-taupe.vercel.app/",
       id: Math.floor(Math.random() * 1000),
     },
-  
+    // {
+    //   image: shopping,
+    //   codeUrl: "https://github.com/Shaghayegh-93/shopping-app",
+    //   demoUrl: "https://e-commerce-app-git-master-shaghayegh-93.vercel.app/",
+    //   id: Math.floor(Math.random() * 1000),
+    // },
     {
       image: agency,
       codeUrl: "https://github.com/Shaghayegh-93/agancy-app",
@@ -51,12 +75,6 @@ const Work = () => {
       image: ExpenseTracker,
       codeUrl: "https://github.com/Shaghayegh-93/Expense-taracker-App",
       demoUrl: "https://expense-taracker-app.vercel.app/",
-      id: Math.floor(Math.random() * 1000),
-    },
-    {
-      image: Rick,
-      codeUrl: "https://github.com/Shaghayegh-93/RickAndMorty",
-      demoUrl: "https://ornate-piroshki-244879.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
   ];
