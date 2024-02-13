@@ -3,43 +3,50 @@ import todoApp from "../../assets/images/todoApp.png";
 import travelApp from "../../assets/images/travelApp.png";
 import bookingApp from "../../assets/images/bookingApp.png";
 import MovieApp from "../../assets/images/MovieApp.png";
-import TodoWallPaper from "../../assets/images/TodoWallpaper.png"
+import TodoWallPaper from "../../assets/images/TodoWallpaper.png";
 import table from "../../assets/images/table.png";
 import shopping from "../../assets/images/shopping.png";
 import agency from "../../assets/images/agency.png";
 import ExpenseTracker from "../../assets/images/ExpenseTracker.png";
 import Rick from "../../assets/images/Rick.png";
 
-
 import WorkCard from "./WorkCard";
 
 const Work = () => {
   const workInfo = [
     {
-      image: Rick,
-      codeUrl: "https://github.com/Shaghayegh-93/RickAndMorty",
-      demoUrl: "https://ornate-piroshki-244879.netlify.app/",
-      id: Math.floor(Math.random() * 1000),
-    },
-    {
+      title: "Hotel Booking",
       image: travelApp,
+      createdBy: "React.js - Tailwind.css",
       codeUrl: "https://github.com/Shaghayegh-93/travel_app",
       demoUrl: "https://hotelbookingapp-sh.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
     {
+      title: "Movie App",
+      createdBy: "React.js - Tailwind.css",
       image: MovieApp,
       codeUrl: "https://github.com/Shaghayegh-93/MovieApplication",
       demoUrl: "https://movie-app-sh.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
     {
+      title: "Rick And Morty",
+      image: Rick,
+      // title:""
+      codeUrl: "https://github.com/Shaghayegh-93/RickAndMorty",
+      demoUrl: "https://ornate-piroshki-244879.netlify.app/",
+      id: Math.floor(Math.random() * 1000),
+    },
+    {
+      title: "Todo App",
       image: todoApp,
       codeUrl: "https://github.com/Shaghayegh-93/todo_list_app",
       demoUrl: "https://resplendent-arithmetic-ddb679.netlify.app/",
       id: Math.floor(Math.random() * 1000),
     },
     {
+      title: "Todo With Redux",
       image: TodoWallPaper,
       codeUrl: "https://github.com/Shaghayegh-93/NoteApp",
       demoUrl: "https://lighthearted-macaron-43c0e7.netlify.app/",
@@ -54,6 +61,7 @@ const Work = () => {
     // },
 
     {
+      title: "Table",
       image: table,
       codeUrl: "https://github.com/Shaghayegh-93/table",
       demoUrl: "https://sample-table-taupe.vercel.app/",
@@ -79,8 +87,11 @@ const Work = () => {
     },
   ];
   return (
-    <div name="work" className="bg-[#0a192f] md:h-screen w-full text-gray-300 mb-60 ">
-      <div className="max-w-[1000px] w-full h-full flex flex-col justify-center mx-auto p-4">
+    <div
+      name="work"
+      className="bg-[#0a192f] md:h-screen w-full text-gray-300 mb-60 "
+    >
+      <div className="max-w-[1000px] w-full h-full flex flex-col justify-center mx-auto p-4 mt-36 md:mt-[100px]">
         <div className="pb-8 ">
           <h2 className="font-bold border-b-4 border-pink-600 inline text-4xl ">
             Work
@@ -95,6 +106,8 @@ const Work = () => {
                   style={{ backgroundImage: `url(${work.image})` }}
                   codeUrl={work.codeUrl}
                   demoUrl={work.demoUrl}
+                  title={work.title}
+                  createdBy={work.createdBy}
                 />
               </div>
             );
