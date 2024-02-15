@@ -12,7 +12,7 @@ import typescriptLogo from "../assets/images/typescriptLogo.png";
 const Skills = () => {
   return (
     <div name="skills" className="bg-[#0a192f] h-screen w-full text-gray-300">
-      <div className=" max-w-[1000px] w-full h-full flex flex-col  justify-center mx-auto p-4 ">
+      <div className=" max-w-[1000px] w-full h-full flex flex-col  justify-center mx-auto p-4 mt-96 md:-mt-[100px]">
         <div className=" pb-8">
           <h2 className="font-bold border-b-4 border-pink-600 inline text-4xl ">
             Skills
